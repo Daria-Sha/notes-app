@@ -1,0 +1,92 @@
+:root {
+    --bgcolor: darkcyan;
+}
+
+* {
+    box-sizing: border-box;
+}
+.notes {
+    display: flex;
+    flex-direction: column;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    align-items: center;
+}
+table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 90vw;
+}
+thead {
+    background-color: var(--bgcolor);
+    border-bottom: 11px solid white;
+    color: white;
+}
+td {
+    background-color: aliceblue;
+    border-bottom: 8px solid white;
+}
+.note-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 15vw;
+}
+.note-icon {
+    width: 6vw;
+}
+.note-data {
+    width: 15vw;
+}
+.edit-note {
+    width: 3vw;
+}
+.circle {
+    align-items: center;
+    background-color: var(--bgcolor);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    height: 3vw;
+    justify-content: center;
+    margin: 0.5vw;
+    text-align: center;
+    width: 3vw;
+}
+.edit {
+    cursor: pointer;
+}
+#create-note, #change-note {
+    background-color: var(--bgcolor);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    padding: 15px 35px;
+}
+.note {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 50vw;
+}
+.note input, .note select, .note textarea {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.statistics, .archived-notes {
+    margin-top: 35px;
+}
+.statistics-head {
+    width: 28vw;
+}
+.hidden {
+    display: none;
+}
+.error {
+    border: 2px solid red;
+    color: red;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hometask 1</title>
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="notes">
+        <table class="active-notes">
+            <thead>
+                <tr>
+                    <th class="note-icon"></th>
+                    <th class="note-data">Name</th>
+                    <th class="note-data">Created</th>
+                    <th class="note-data">Category</th>
+                    <th class="note-data">Content</th>
+                    <th class="note-data">Dates</th>
+                    <th class="edit-note"><span class="material-icons" style="font-size: 2vw;">edit</span></th>
+                    <th class="edit-note"><span class="material-icons" style="font-size: 2vw;">archive</span></th>
+                    <th class="edit-note"><span class="material-icons" style="font-size: 2vw;">delete</span></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <button type="button" id="create-note">Create Note</button>
+
+        <div class="for-form"></div>
+
+        <table class="statistics">
+            <thead>
+                <tr>
+                    <th class="note-icon"></th>
+                    <th class="statistics-head">Note Category</th>
+                    <th class="statistics-head">Active</th>
+                    <th class="statistics-head">Archived</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <table class="archived-notes hidden">
+            <thead>
+                <tr>
+                    <th class="note-icon"></th>
+                    <th class="note-data">Name</th>
+                    <th class="note-data">Created</th>
+                    <th class="note-data">Category</th>
+                    <th class="note-data">Content</th>
+                    <th class="note-data">Dates</th>
+                    <th class="edit-note"></th>
+                    <th class="edit-note"><span class="material-icons" style="font-size: 2vw;">unarchive</span></th>
+                    <th class="edit-note"><span class="material-icons" style="font-size: 2vw;">delete</span></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+</html>
