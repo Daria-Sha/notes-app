@@ -2,6 +2,8 @@ import { categories, dateOptions, activeNotes as act, archivedNotes as arc } fro
 import { createForm, createNotesTable, createStatisticsTable, getNodeId } from './funcsDOM.js';
 import { countStatistics, changeNoteLocation, checkData, extractDates } from './funcs.js';
 
+//First commit test
+
 let activeNotes = act;
 let archivedNotes = arc;
 
