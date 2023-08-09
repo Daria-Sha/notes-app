@@ -114,7 +114,7 @@ export function createStatisticsTable(calculatedCategories, eventHandler) {
         tdActiveNumber.innerText = calculatedCategories[category].activeNumber;
         const tdArchivedNumber = document.createElement('td');
         if(calculatedCategories[category].archivedNumber) {
-            tdArchivedNumber.style = 'cursor: pointer;';
+            tdArchivedNumber.classList.add('available-archive');
             tdArchivedNumber.addEventListener('click', eventHandler);
         }
         tdArchivedNumber.innerText = calculatedCategories[category].archivedNumber;

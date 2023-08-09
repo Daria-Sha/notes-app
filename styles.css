@@ -90,3 +90,8 @@ td {
     border: 2px solid red;
     color: red;
 }
+.available-archive {
+    color: #0B0080;
+    cursor: pointer;
+    text-decoration: underline;
+}
